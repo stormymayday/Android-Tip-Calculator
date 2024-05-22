@@ -11,109 +11,92 @@
         android:id="@+id/billAmountLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="51dp"
         android:text="@string/bill_amount_label"
         android:textSize="@dimen/text_size"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="51dp" />
 
     <EditText
         android:id="@+id/billAmountEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="67dp"
         android:ems="10"
         android:inputType="numberDecimal"
         android:textSize="@dimen/text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="39dp" />
 
     <TextView
         android:id="@+id/percentLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:text="@string/tip_percent_label"
         android:textSize="@dimen/text_size"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/percentTextView"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="172dp" />
 
     <TextView
         android:id="@+id/percentTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="17dp"
         android:text="@string/tip_percent"
         android:textSize="@dimen/text_size"
-        app:layout_constraintBaseline_toBaselineOf="@+id/percentDownButton"
-        app:layout_constraintEnd_toStartOf="@+id/percentDownButton" />
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="172dp" />
 
     <TextView
         android:id="@+id/tipLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:text="@string/tip_amount_label"
         android:textSize="@dimen/text_size"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tipTextView"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="272dp" />
 
     <TextView
         android:id="@+id/tipTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="17dp"
         android:text="@string/tip_amount"
         android:textSize="@dimen/text_size"
-        app:layout_constraintEnd_toStartOf="@+id/percentDownButton"
-        app:layout_constraintTop_toBottomOf="@+id/percentDownButton" />
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="272dp" />
 
     <TextView
         android:id="@+id/totalLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:text="@string/total_amount_label"
         android:textSize="@dimen/text_size"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/totalTextView"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="382dp" />
 
     <TextView
         android:id="@+id/totalTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="330dp"
-        android:layout_marginBottom="331dp"
         android:text="@string/total_amount"
         android:textSize="@dimen/text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tipTextView"
-        app:layout_constraintStart_toStartOf="@+id/tipTextView"
-        app:layout_constraintTop_toTopOf="@+id/billAmountLabel" />
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="382dp" />
 
     <Button
         android:id="@+id/percentDownButton"
         android:layout_width="@dimen/buttons_width_height"
         android:layout_height="@dimen/buttons_width_height"
-        android:layout_marginTop="79dp"
-        android:layout_marginEnd="4dp"
         android:text="@string/decrease"
-        app:layout_constraintEnd_toStartOf="@+id/percentUpButton"
-        app:layout_constraintTop_toBottomOf="@+id/billAmountEditText" />
+        tools:layout_editor_absoluteX="352dp"
+        tools:layout_editor_absoluteY="166dp" />
 
     <Button
         android:id="@+id/percentUpButton"
         android:layout_width="@dimen/buttons_width_height"
         android:layout_height="@dimen/buttons_width_height"
-        android:layout_marginEnd="10dp"
         android:text="@string/increase"
-        app:layout_constraintBaseline_toBaselineOf="@+id/percentDownButton"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteX="401dp"
+        tools:layout_editor_absoluteY="166dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
