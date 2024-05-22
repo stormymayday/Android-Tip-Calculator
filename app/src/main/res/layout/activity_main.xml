@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="51dp"
-        android:text="TextView"
+        android:text="@string/bill_amount_label"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,6 +27,7 @@
         android:layout_marginEnd="67dp"
         android:ems="10"
         android:inputType="numberDecimal"
+        android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,7 +36,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="TextView"
+        android:text="@string/tip_percent_label"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/percentTextView"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -42,7 +47,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="17dp"
-        android:text="TextView"
+        android:text="@string/tip_percent"
+        android:textSize="@dimen/text_size"
         app:layout_constraintBaseline_toBaselineOf="@+id/percentDownButton"
         app:layout_constraintEnd_toStartOf="@+id/percentDownButton" />
 
@@ -51,7 +57,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="TextView"
+        android:text="@string/tip_amount_label"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/tipTextView"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -61,7 +69,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="61dp"
         android:layout_marginEnd="17dp"
-        android:text="TextView"
+        android:text="@string/tip_amount"
+        android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toStartOf="@+id/percentDownButton"
         app:layout_constraintTop_toBottomOf="@+id/percentDownButton" />
 
@@ -70,7 +79,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="TextView"
+        android:text="@string/total_amount_label"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/totalTextView"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -80,7 +91,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="330dp"
         android:layout_marginBottom="331dp"
-        android:text="TextView"
+        android:text="@string/total_amount"
+        android:textSize="@dimen/text_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tipTextView"
         app:layout_constraintStart_toStartOf="@+id/tipTextView"
@@ -88,20 +100,20 @@
 
     <Button
         android:id="@+id/percentDownButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/buttons_width_height"
+        android:layout_height="@dimen/buttons_width_height"
         android:layout_marginTop="79dp"
         android:layout_marginEnd="4dp"
-        android:text="Button"
+        android:text="@string/decrease"
         app:layout_constraintEnd_toStartOf="@+id/percentUpButton"
         app:layout_constraintTop_toBottomOf="@+id/billAmountEditText" />
 
     <Button
         android:id="@+id/percentUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/buttons_width_height"
+        android:layout_height="@dimen/buttons_width_height"
         android:layout_marginEnd="10dp"
-        android:text="Button"
+        android:text="@string/increase"
         app:layout_constraintBaseline_toBaselineOf="@+id/percentDownButton"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
