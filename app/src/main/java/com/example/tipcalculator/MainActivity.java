@@ -54,28 +54,28 @@ public class MainActivity extends AppCompatActivity implements TextView.OnEditor
         percentUpButton.setOnClickListener(this);
     }
 
-//    @Override
-//    protected void onSaveInstanceState(@NonNull Bundle outState) {
-//        super.onSaveInstanceState(outState);
-//
-//        // Storing values
-//        outState.putString("billAmountString", billAmountString);
-//        outState.putFloat("tipPercent", tipPercent);
-//
-//    }
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
 
-//    @Override
-//    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-//        super.onRestoreInstanceState(savedInstanceState);
-//
-//        if(savedInstanceState != null) {
-//            billAmountString = savedInstanceState.getString("billAmountString", "");
-//            tipPercent = savedInstanceState.getFloat("tipPercent", 0.15f);
-//
-//            billAmountEditText.setText(billAmountString);
-//            calculateAndDisplay();
-//        }
-//    }
+        // Storing values
+        outState.putString("billAmountString", billAmountString);
+        outState.putFloat("tipPercent", tipPercent);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        if(savedInstanceState != null) {
+            billAmountString = savedInstanceState.getString("billAmountString", "");
+            tipPercent = savedInstanceState.getFloat("tipPercent", 0.15f);
+
+            billAmountEditText.setText(billAmountString);
+            calculateAndDisplay();
+        }
+    }
 
     public void calculateAndDisplay() {
         // Getting the bill amount
